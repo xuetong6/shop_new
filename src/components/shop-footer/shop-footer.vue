@@ -1,7 +1,9 @@
 <template>
-  <div class="footer-wrap">
-    <p>footer</p>
-  </div>
+  <footer class="footer-wrap">
+    <div class="w">
+      <p>footer</p>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -12,6 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~common/scss/variable";
+@import "~common/scss/mixin";
 .footer-wrap {
   width: 100%;
   height: 60px;
@@ -20,5 +23,8 @@ export default {
   left: 0;
   right: 0;
   background-color: $footer-bgColor;
+  .w {
+    @include w;
+  }
 }
 </style>

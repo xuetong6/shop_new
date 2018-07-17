@@ -1,12 +1,64 @@
 <template>
-  <p>home</p>
+  <section class="home-wrap">
+    <el-carousel trigger="click" height="250px">
+      <el-carousel-item>
+        <img src="./carousel-01.jpg" alt="" class="home-carousel-img">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="./carousel-02.jpg" alt="" class="home-carousel-img">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="./carousel-03.jpg" alt="" class="home-carousel-img">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="./carousel-04.jpg" alt="" class="home-carousel-img">
+      </el-carousel-item>
+    </el-carousel>
+    <section class="w">
+      <article class="home-w-article"></article>
+      <aside class="home-w-aside"></aside>
+    </section>
+  </section>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+    }
+  }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import "~common/scss/variable";
+@import "~common/scss/mixin";
+.home-wrap {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 60px;
+  left: 0;
+  background-color: #ddd;
+  .home-carousel-img {
+    width: 100%;
+    height: 100%;
+  }
+  .w {
+    height: calc(100% - 250px);
+    @include w;
+    .home-w-article {
+      float: left;
+      width: 84%;
+      height: 100%;
+      background-color: rgb(187, 149, 95);
+    }
+    .home-w-aside {
+      float: right;
+      width: 16%;
+      height: 100%;
+      background-color:goldenrod;
+    }
+  }
+}
 </style>
