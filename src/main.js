@@ -7,7 +7,7 @@ import router from './router'
 /* 导入vuex store */
 import store from './store'
 
-/* 导入scss */
+/* 导入scss中的reset, 重置样式 */
 import 'common/scss/index.scss'
 
 Vue.config.productionTip = false
