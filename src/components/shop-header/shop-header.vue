@@ -10,8 +10,8 @@
 
 <script>
 export default {
-  name: "ShopHeader"
-};
+  name: 'ShopHeader'
+}
 </script>
 
 <style lang="scss" scoped>
