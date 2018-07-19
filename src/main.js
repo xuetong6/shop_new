@@ -6,8 +6,11 @@ import router from './router'
 // import iView from 'iview'
 // import 'iview/dist/styles/iview.css'
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
+
+// 按需加载
+import { Carousel, CarouselItem } from 'element-ui'
 
 /* 导入vuex store */
 import store from './store'
@@ -17,7 +20,9 @@ import 'common/scss/index.scss'
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI)
+// 按需加载
+Vue.use(Carousel)
+Vue.use(CarouselItem)
 
 /* eslint-disable no-new */
 new Vue({
