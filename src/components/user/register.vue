@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     onSubmit (formName) {
-       console.log('aa')
+      console.log('aa')
     },
     validate (type) {
       if (this.form.name === '') {
