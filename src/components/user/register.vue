@@ -5,7 +5,7 @@
             <div class="register-main">
                 <el-form ref="form" :rules="rules" :model="form" label-width="80px">
                     <el-form-item label="用户名"  prop="name">
-                        <el-input v-model="form.name" @blur="validate"></el-input>
+                        <el-input v-model="form.name"></el-input>
                     </el-form-item>
                     <el-form-item label="密码" prop="password">
                         <el-input v-model="form.password"></el-input>
@@ -14,7 +14,7 @@
                         <el-input v-model="form.respass"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" class="user-btn" @click="onSubmit(form)">登陆</el-button>
+                        <el-button type="primary" class="user-btn" @click="onSubmit('form')">登陆</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -48,21 +48,14 @@ export default {
   },
   methods: {
     onSubmit (formName) {
-      console.log('aa')
-    },
-    validate (type) {
-      if (this.form.name === '') {
-        return this.$notify.error({
-          title: '错误',
-          message: '请输入姓名'
-        })
-      }
-      if (this.form.password === '') {
-        return this.$notify.error({
-          title: '错误',
-          message: '请输入密码'
-        })
-      }
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          alert('submit!')
+        } else {
+          console.log('error submit!!')
+          return false
+        }
+      })
     }
   }
 }

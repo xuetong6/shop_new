@@ -10,7 +10,7 @@ import router from './router'
 // import 'element-ui/lib/theme-chalk/index.css'
 
 // 按需加载
-import { Carousel, CarouselItem } from 'element-ui'
+import { Carousel, CarouselItem, Form, FormItem, Input, Button, Notification } from 'element-ui'
 
 /* 导入vuex store */
 import store from './store'
@@ -23,6 +23,11 @@ Vue.config.productionTip = false
 // 按需加载
 Vue.use(Carousel)
 Vue.use(CarouselItem)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Button)
+Vue.prototype.$notify = Notification
 
 /* eslint-disable no-new */
 new Vue({
