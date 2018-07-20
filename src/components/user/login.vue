@@ -1,7 +1,7 @@
 <template>
     <section class="register-warp">
         <div class="w">
-            <h2 class="user-title">注册</h2>
+            <h2 class="user-title">登录</h2>
             <div class="register-main">
                 <el-form ref="form" :rules="rules" :model="form" label-width="80px">
                     <el-form-item label="用户名"  prop="name">
@@ -10,11 +10,8 @@
                     <el-form-item label="密码" prop="password">
                         <el-input type="password" v-model="form.password"></el-input>
                     </el-form-item>
-                    <el-form-item label="重复密码" prop="respass">
-                        <el-input type="password" v-model="form.respass"></el-input>
-                    </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" class="user-btn" @click="onSubmit('form')">注册</el-button>
+                        <el-button type="primary" class="user-btn" @click="onSubmit('form')">登录</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -25,32 +22,17 @@
 <script>
 export default {
   data () {
-    var validatePass2 = (rule, value, callback) => {
-      if (value !== this.form.password) {
-        callback(new Error('两次输入密码不一致!'))
-      } else {
-        callback()
-      }
-    }
     return {
       form: {
         name: '',
-        password: '',
-        respass: ''
+        password: ''
       },
       rules: {
         name: [
-          { required: true, message: '请输入用户名', trigger: 'blur' },
-          { min: 6, max: 13, message: '长度在 6 到 13 个字符', trigger: 'blur' }
+          { required: true, message: '用户名不能为空', trigger: 'blur' }
         ],
         password: [
-          { required: true, message: '请输入密码', trigger: 'blur' },
-          { min: 8, max: 12, message: '长度在 8 到 12 个字符', trigger: 'blur' }
-        ],
-        respass: [
-          { required: true, message: '请输入重复密码', trigger: 'blur' },
-          { min: 8, max: 12, message: '长度在 8 到 12 个字符', trigger: 'blur' },
-          { validator: validatePass2, trigger: 'blur' }
+          { required: true, message: '密码不能为空', trigger: 'blur' }
         ]
       }
     }
