@@ -4,10 +4,12 @@ import Router from 'vue-router'
 import Home from 'components/home/home'
 import Register from 'components/user/register'
 import Login from 'components/user/login'
+import NotFoundComponent from 'components/404/404'
 
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -24,8 +26,11 @@ const router = new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '*',
+      component: NotFoundComponent
     }
-
   ]
 })
 

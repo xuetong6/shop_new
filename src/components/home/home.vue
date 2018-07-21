@@ -14,7 +14,7 @@
         <img src="./carousel-04.jpg" alt="" class="home-carousel-img">
       </el-carousel-item>
     </el-carousel>
-    <section class="w">
+    <section class="wapper">
       <article class="home-w-article"></article>
       <aside class="home-w-aside"></aside>
     </section>
