@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <shop-header></shop-header>
     <section class="user-warp">
         <div class="box">
             <h2 class="user-title">登录</h2>
@@ -11,7 +13,7 @@
                         <el-input type="password" v-model="form.password" placeholder="登陆密码"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" class="user-btn" @click="onSubmit('form')">登录</el-button>
+                        <el-button type="primary" class="btn btn-primary user-btn" @click="onSubmit('form')">登录</el-button>
                     </el-form-item>
                     <div class="login-prompt-link">
                        <p>还没账号？
@@ -21,10 +23,15 @@
             </div>
         </div>
     </section>
+  </div>
 </template>
 
 <script>
+import ShopHeader from 'components/shop-header/shop-header.vue'
 export default {
+  components: {
+    ShopHeader
+  },
   data () {
     return {
       form: {
@@ -89,7 +96,9 @@ export default {
         margin: 40px auto 0;
     }
     .user-btn{
-        @include user-btn;
+        width: 100%;
+        @include btn;
+        @include btn-primary;
     }
     .login-prompt-link{
       font-size: .85em;

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <shop-header></shop-header>
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
@@ -8,12 +7,8 @@
 </template>
 
 <script>
-import ShopHeader from 'components/shop-header/shop-header.vue'
 export default {
-  name: 'App',
-  components: {
-    ShopHeader
-  }
+  name: 'App'
 }
 </script>
 

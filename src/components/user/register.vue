@@ -1,4 +1,6 @@
 <template>
+<div>
+    <shop-header></shop-header>
     <section class="user-warp">
         <div class="box">
             <h2 class="user-title">注册</h2>
@@ -17,16 +19,21 @@
                        <el-checkbox v-model="form.checked">阅读并同意《用户服务协议》</el-checkbox>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" class="user-btn" @click="onSubmit('form')">注册</el-button>
+                        <el-button type="primary" class="btn btn-primary user-btn" @click="onSubmit('form')">注册</el-button>
                     </el-form-item>
                 </el-form>
             </div>
         </div>
     </section>
+  </div>
 </template>
 
 <script>
+import ShopHeader from 'components/shop-header/shop-header.vue'
 export default {
+  components: {
+    ShopHeader
+  },
   data () {
     var validatePass2 = (rule, value, callback) => {
       if (value !== this.form.password) {
@@ -106,7 +113,9 @@ export default {
         margin: 40px auto 0;
     }
     .user-btn{
-        @include user-btn;
+        width: 100%;
+        @include btn;
+        @include btn-primary;
     }
 }
 </style>
