@@ -1,0 +1,18 @@
+{
+    "goods": [
+        {
+            "name": "手表1",
+            "price": 299,
+            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+        },
+        {
+            "name": "手表2",
+            "price": 2990,
+            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+        }
+    ],
+    "user": {
+        "id": 1,
+        "name": "liuxin"
+    }
+}

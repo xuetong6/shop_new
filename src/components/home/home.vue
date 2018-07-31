@@ -18,6 +18,8 @@
       <article class="home-w-article"></article>
       <aside class="home-w-aside"></aside>
     </section>
+    <button @click="clickBtn">click</button>
+    <button @click="login">login</button>
   </section>
 </template>
 
@@ -25,6 +27,23 @@
 export default {
   data () {
     return {}
+  },
+  methods: {
+    clickBtn () {
+      /* 测试json-server mock */
+      this.$http.get('api/goods')
+        .then((res) => {
+          console.log('res')
+          console.log(res)
+        })
+    },
+/*     login () {
+      this.$http.post('api/account/login', {username: 'lance', pwd: 333333})
+        .then(res => {
+          console.log(res)
+
+        })
+    } */
   }
 }
 </script>
