@@ -36,8 +36,8 @@ export default {
           console.log('res')
           console.log(res)
         })
-    },
-/*     login () {
+    }
+    /*     login () {
       this.$http.post('api/account/login', {username: 'lance', pwd: 333333})
         .then(res => {
           console.log(res)
