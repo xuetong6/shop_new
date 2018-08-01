@@ -8,7 +8,7 @@
       </ul>
       <div class="header-nologin">
         <router-link class="header-register-btn" to="/register">注册</router-link>
-        <router-link class="btn btn-primary header-login-btn" to="/login">登录</router-link>
+        <router-link class="header-login-btn" to="/login">登录</router-link>
       </div>
     </div>
   </header>
@@ -28,6 +28,7 @@ export default {
 <style lang="scss" scoped>
 @import "~common/scss/variable";
 @import "~common/scss/mixin";
+body{min-width: 1200px;}
 .header-wrap {
   position: relative;
   width: 100%;
@@ -56,6 +57,8 @@ export default {
     }
     .header-login-btn {
       margin: -4px 0 0 20px;
+      @include btn;
+      @include btn-primary;
     }
     .head-nav{
       @include box-flex;
@@ -69,7 +72,15 @@ export default {
     .head-nav>li>a{
       color: $white;
     }
-
   }
+}
+@media (max-width: 768px) {
+  .header-wrap .header-nologin,.header-wrap ul{
+     display: none !important;
+  }
+   .header-logo{
+    align-items: center;
+    -webkit-box-align: center;
+   }
 }
 </style>

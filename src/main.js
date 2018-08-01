@@ -11,7 +11,7 @@ import axios from 'axios'
 // import 'element-ui/lib/theme-chalk/index.css'
 
 // 按需加载
-import { Carousel, CarouselItem, Form, FormItem, Input, Button, Notification } from 'element-ui'
+import { Carousel, CarouselItem, Form, FormItem, Input, Button, Notification, Checkbox } from 'element-ui'
 
 /* 导入vuex store */
 import store from './store'
@@ -28,6 +28,7 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Button)
+Vue.use(Checkbox)
 Vue.prototype.$notify = Notification
 Vue.prototype.$http = axios
 
