@@ -5,6 +5,7 @@ import Home from 'components/home/home'
 import Register from 'components/user/register'
 import Login from 'components/user/login'
 import NotFoundComponent from 'components/404/404'
+import Goods from 'components/goods/goods'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ const router = new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '/goods',
+      component: Goods
     },
     {
       path: '*',
