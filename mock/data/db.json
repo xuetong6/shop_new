@@ -3,32 +3,32 @@
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包1",
             "price": 299,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img12.360buyimg.com/n7/jfs/t22312/294/1962263993/158389/d6d5adfb/5b3f0027N2cef503c.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包2",
             "price": 2990,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img10.360buyimg.com/n7/jfs/t5773/337/4851497220/255028/89abdce8/59560f89N5c19787a.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包3",
             "price": 299,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img11.360buyimg.com/n7/jfs/t16606/90/624459936/365270/fbc7694e/5a9cd28cNda744560.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包4",
             "price": 2990,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img12.360buyimg.com/n7/jfs/t21685/59/755444008/272149/fdafea5c/5b179de1N7c4f66b6.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包5",
             "price": 299,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img13.360buyimg.com/n7/jfs/t24586/261/677406755/248143/9643c7f3/5b3c3822Nea8f73e4.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包6",
             "price": 2990,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img10.360buyimg.com/n7/jfs/t22345/95/1468651952/138030/fa24fa62/5b2a0df3N0044c834.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包7",
@@ -38,7 +38,7 @@
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包8",
             "price": 2990,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img12.360buyimg.com/n7/jfs/t22312/294/1962263993/158389/d6d5adfb/5b3f0027N2cef503c.jpg"
         },{
             "name": "Luna卢娜 双肩包男背包女商务旅行包9",
             "price": 299,
@@ -52,7 +52,7 @@
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包11",
             "price": 299,
-            "img": "http://img3.imgtn.bdimg.com/it/u=1560019320,4259521369&fm=27&gp=0.jpg"
+            "img": "https://img12.360buyimg.com/n7/jfs/t22312/294/1962263993/158389/d6d5adfb/5b3f0027N2cef503c.jpg"
         },
         {
             "name": "Luna卢娜 双肩包男背包女商务旅行包12",
@@ -139,5 +139,30 @@
     "user": {
         "id": 1,
         "name": "liuxin"
-    }
+    },
+    "merchant": {
+        "name" : "EOS 柚子 (Eosecoin)",
+        "brief": "EOS（柚子）是由币圈内的天才程序员，Daniel Larimer（人称BM）在2017年发起的公链项目。BM在此之前已经成功实现了BitShares和Steemit两个项目，并且获得了巨大成功。EOS是BM的第三个项目，号称要取代以太坊。截止目前（2018年3月11日），EOS的长达一年的ICO还未结束，EOS的主网还未正式上线，但是目前EOS的市值已经高达42.7亿美金（约合275亿人民币），是市值排名第9的数字货币",
+        "avatar": "https://static2.digifinex.com/Public/Uploads/2018-02-03/5a755ed22b253.svg"
+    },
+    "mergantAnnouncement": [
+        {
+            "title": "商家EOS的公告1"
+        },
+        {
+            "title": "商家EOS的公告2"
+        },
+        {
+            "title": "商家EOS的公告3"
+        },
+        {
+            "title": "商家EOS的公告4"
+        },
+        {
+            "title": "商家EOS的公告5"
+        },
+        {
+            "title": "商家EOS的公告6"
+        }
+    ]
 }

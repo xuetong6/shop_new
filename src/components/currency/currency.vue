@@ -26,13 +26,14 @@ export default {
 
   props: {
     currencyInfo: {
-      type: Object,
-      require: true
+      type: Object
     }
   },
 
   mounted () {
     /* 根据currencyInfo中的商户信息, 获取商户公告 */
+    console.log('currency mounted')
+    console.log(this.currencyInfo)
     this.$http.get('/api/mergantAnnouncement')
       .then(res => {
         this.mergantAnnouncement = res.data.data
@@ -50,6 +51,7 @@ export default {
   align-items: center;
   box-sizing: content-box;
   box-shadow: 0 0 10px #ccc;
+  background: #fff;
   .currency-left {
     width: 25%;
     border-right: 1px solid #ccc;
