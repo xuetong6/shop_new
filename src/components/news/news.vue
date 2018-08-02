@@ -55,7 +55,6 @@ export default {
     width: 378px;
     border-radius: 8px;
     background-color: $bgColor-hui;
-    margin:5px 0 0 100px;
     height: 22px;
     line-height: 22px;
     font-size: .6em;

@@ -5,7 +5,7 @@ import Home from 'components/home/home'
 import Register from 'components/user/register'
 import Login from 'components/user/login'
 import NotFoundComponent from 'components/404/404'
-import Goods from 'components/goods/goods'
+import Merchant from 'components/merchant/merchant'
 
 Vue.use(Router)
 
@@ -29,8 +29,8 @@ const router = new Router({
       component: Login
     },
     {
-      path: '/goods',
-      component: Goods
+      path: '/merchant/:id',
+      component: Merchant
     },
     {
       path: '*',
