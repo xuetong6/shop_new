@@ -38,7 +38,6 @@
         <button class="price">单价排序</button>
       </div>
       <div class="goods">
-
         <goods-item  :item="item" v-for="(item, key) in goodsList" :key="key">
         </goods-item>
       </div>

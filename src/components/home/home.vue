@@ -31,307 +31,68 @@
                <span class="col-3 text-right"><b>商品名称</b></span>
              </dt>
              <div class="home-userlist-con">
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
-              <dd class="clear">
-                <span class="col-3 text-left"><b>298*******111</b></span>
-                <span class="col-3 text-center"><b>2018-09-01</b></span>
-                <span class="col-3 text-center"><b>HLC</b></span>
-                <span class="col-3 text-right"><b>安耐晒防晒霜</b></span>
-              </dd>
+                <home-userlist :item="item" v-for="(item , key) in homeuserlist" :key="key"></home-userlist>
              </div>
            </dl>
         </div>
-        <!-- <home-userlist></home-userlist> -->
-        <!-- <button @click="clickBtn">测试mock</button>  -->
       </div>
       <div class="home-goodslist">
         <div class="w">
-          <dl class="start-goods clear">
-            <dd class="col-4">
-              <img src="./images/goods-1.png">
-              <div class="explain"><span>BTC</span> <span>比特币</span></div>
-            </dd>
-            <dd class="col-4">
-              <img src="./images/goods-1.png">
-              <div class="explain"><span>BTC</span> <span>比特币</span></div>
-            </dd>
-            <dd class="col-4">
-              <img src="./images/goods-1.png">
-              <div class="explain"><span>BTC</span> <span>比特币</span></div>
-            </dd>
+          <dl class="clear">
+            <home-startgoods :item=item v-for="(item , key) in homestartgoods" :key="key"></home-startgoods>
           </dl>
           <dl class="small-goods clear">
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
-            <dd class="col-6">
-              <div class="clear">
-                <span class="goodsimg goodsimg-usdt"></span>
-                <div class="goods-explain">
-                  <span>USDT</span>
-                  <p>泰达币</p>
-                </div>
-              </div>
-              <div class="goodsimg-btn"><a href="">点击进入</a></div>
-            </dd>
+            <home-smallgoods :item="item" v-for="(item , key) in homesmallgoods" :key="key"></home-smallgoods>
           </dl>
         </div>
 
       </div>
       <div class="other">
-
       </div>
     </div>
-    <footer class="footer">
-      <div class="w">
-        <div class="footer-img">
-          <h2 class="footer-title">战略合作伙伴</h2>
-          <div class="footer-imglist clear">
-            <span class="img-ex"></span>
-            <span class="img-jp"></span>
-          </div>
-        </div>
-        <div class="footer-list clear">
-          <dl class="col-3">
-            <dt>关于我们</dt>
-            <dd><a href="#">友情链接</a></dd>
-            <dd><a href="#">使用条款</a></dd>
-            <dd><a href="#">隐私申明</a></dd>
-          </dl>
-          <dl class="col-3">
-            <dt>关于我们</dt>
-            <dd><a href="#">友情链接</a></dd>
-            <dd><a href="#">使用条款</a></dd>
-            <dd><a href="#">隐私申明</a></dd>
-          </dl>
-          <dl class="col-3">
-            <dt>关于我们</dt>
-            <dd><a href="#">友情链接</a></dd>
-            <dd><a href="#">使用条款</a></dd>
-            <dd><a href="#">隐私申明</a></dd>
-          </dl>
-          <dl class="col-3">
-            <dt>关于我们</dt>
-            <dd><a href="#">友情链接</a></dd>
-            <dd><a href="#">使用条款</a></dd>
-            <dd><a href="#">隐私申明</a></dd>
-          </dl>
-
-        </div>
-      </div>
-      <div class="footer-bar">
-        <p>@conejguj ssdfu dfhgyu </p>
-      </div>
-    </footer>
+    <shop-footer></shop-footer>
   </div>
-
 </template>
 
 <script>
+// 用户购买信息列表
 import HomeUserlist from './home-userlist'
+// 推荐币种列表
+import HomeStartgoods from './home-startgoods'
+// 币种列表
+import HomeSmallgoods from './home-smallgoods'
+// 公告列表
 import News from 'components/news/news'
+// 底部
+import ShopFooter from '../shop-footer/shop-footer'
 export default {
   data () {
     return {
-      newsList: []
+      newsList: [],
+      homeuserlist: [],
+      homestartgoods: [],
+      homesmallgoods: []
     }
   },
   mounted () {
     this.$http.get('/api/homenews/')
       .then(res => {
         this.newsList = res.data.data
+      })
+    /* 获取商品数据 */
+    this.$http.get('/api/userlists')
+      .then(res => {
+        this.homeuserlist = res.data.data
+      })
+    // 获取推荐币种列表
+    this.$http.get('/api/homestartgoods')
+      .then(res => {
+        this.homestartgoods = res.data.data
+      })
+    // 获取全部币种列表
+    this.$http.get('/api/homesmallgoods')
+      .then(res => {
+        this.homesmallgoods = res.data.data
       })
   },
   methods: {
@@ -353,7 +114,10 @@ export default {
   },
   components: {
     HomeUserlist,
-    News
+    HomeStartgoods,
+    HomeSmallgoods,
+    News,
+    ShopFooter
   }
 
 }
@@ -479,17 +243,13 @@ html{min-width: 1200px;}
         border-bottom: 1px solid $line-hui2;
         margin-bottom: 2px;
       }
-      dd{cursor: pointer;}
-      dd:hover{
-        @include btn-primary;
-      }
-      .home-userlist-con{max-height: 260px;overflow: auto;}
-      span{
+      dt span{
         display: block;
         float: left;
         line-height: 26px;
         padding: 0 15px;
       }
+      .home-userlist-con{max-height: 260px;overflow: auto;}
       .col-3{
         width: 25%;
       }
@@ -505,155 +265,9 @@ html{min-width: 1200px;}
     .w{
       @include w;
     }
-    .start-goods{
-      .col-4{
-        width: 33%;
-        margin-right: .5%;
-      }
-      .col-4:last-child{
-        margin-right: 0;
-      }
-      dd{
-        background: $white;
-        height:346px;
-        float: left;
-        padding-top: 125px;
-        text-align: center;
-      }
-      dd img{
-        max-height: 70px;
-        max-width: 300px;
-      }
-      .explain{
-        margin-top: 50px;
-        font-size: 1.2em;
-      }
-    }
-    .small-goods{
-      font-size: .85em;
-      .col-6{
-        width: 16.25%;
-        margin-right: .5%;
-      }
-      dd{
-        background: $white;
-        height:110px;
-        float: left;
-        padding:20px 0 0 20px;
-        margin-top: 5px;
-      }
-      .col-6:nth-child(6n){
-        margin-right: 0;
-      }
-      dd:hover{
-        @include btn-primary;
-      }
-      dd:hover .goodsimg-btn{
-        display: block;
-      }
-      dd:hover .goods-explain{
-        height: 60px;
-      }
-      .goodsimg{
-        width: 50px;
-        height: 50px;
-        display: block;
-        float: left;
-        margin-top: 10px;
-      }
-      .goodsimg-usdt{
-        background: url(./images/small-1.png) no-repeat center;
-        background-size: 100% 100%;
-      }
-      .goods-explain{
-        float: right;
-        width: 90px;
-        height: 70px;
-        border-left: 1px solid $line-hui2;
-        padding: 12px 15px;
-      }
-      .goods-explain span{
-        line-height: 30px;
-      }
-      .goodsimg-btn{
-        text-align: center;
-        display: none;
-      }
-      .goodsimg-btn a{
-        width: 80px;
-        height: 20px;
-        line-height: 20px;
-        border-radius: 16px;
-        border:1px solid $white;
-        color: $white;
-        font-size: .6em;
-        display: inline-block;
-        text-align: center;
-        margin-top: 5px;
-      }
-    }
   }
   .other{
     height: 400px;
-  }
-}
-.footer{
-  background: $line-hui2;
-  .w{
-    @include w;
-  }
-  .footer-img{
-    border-bottom:1px solid $footer-bgColor;
-    .footer-title{
-      text-align: center;
-      font-size: 1.4em;
-      padding: 40px 0 20px;
-      font-weight: 400;
-    }
-    .footer-imglist{
-      width: 420px;
-      margin: 0 auto;
-      padding-bottom: 36px;
-      span{
-        width: 130px;
-        height: 30px;
-        display: block;
-        float: left;
-        margin: 0 40px;
-      }
-      .img-ex{
-        background: url(./images/footer-ex.png) no-repeat center;
-        background-size: 100% auto;
-      }
-      .img-jp{
-        background: url(./images/footer-jp.png) no-repeat center;
-        background-size: 100% auto;
-      }
-    }
-  }
-  .footer-list{
-    width: 720px;
-    padding: 26px 0 30px;
-    margin: 0 auto;
-    font-size: .85em;
-    line-height: 30px;
-    .col-3{
-      width: 25%;
-    }
-    dl{
-      float: left;
-    }
-    dt{
-      font-weight: 600;
-    }
-  }
-  .footer-bar{
-    height: 36px;
-    line-height: 36px;
-    font-size:.85em;
-    color: $white;
-    text-align: center;
-    background: $footer-bgColor;
   }
 }
 
