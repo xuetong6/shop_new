@@ -1,5 +1,4 @@
 <template>
-
   <div>
     <header class="header-wrap">
       <div class="wrapper">
@@ -26,9 +25,7 @@
         <div class="banner">
           <a href="" class="banner-1"></a>
         </div>
-        <div class="userlist">
-
-        </div>
+        <home-userlist></home-userlist>
       </div>
 
     </div>
@@ -38,6 +35,7 @@
 </template>
 
 <script>
+import HomeUserlist from './home-userlist'
 export default {
   data () {
     return {}
@@ -58,7 +56,11 @@ export default {
 
         })
     } */
+  },
+  components: {
+    HomeUserlist
   }
+
 }
 </script>
 
