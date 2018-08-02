@@ -26,10 +26,11 @@
           <a href="" class="banner-1"></a>
         </div>
         <home-userlist></home-userlist>
+        <button @click="clickBtn">测试mock</button>
       </div>
 
     </div>
-    <button @click="clickBtn">测试mock</button>
+    
   </div>
 
 </template>
