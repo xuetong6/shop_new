@@ -1,2 +1,4 @@
 @import "reset";
 @import "variable";
+.clear{zoom:1; overflow: hidden;}
+.clear:after{display:block;content:"";clear:both;}

@@ -21,6 +21,10 @@ export default {
     newsList: {
       type: Array,
       required: true
+    },
+    time: {
+      type: String,
+      default: '1000'
     }
   },
 
@@ -37,7 +41,7 @@ export default {
       } else {
         this.activeIndex = 0
       }
-    }, 2000)
+    }, this.time)
   }
 }
 </script>
